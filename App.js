@@ -1,15 +1,26 @@
-import { View, Text } from "react-native";
+import LandingPage from "./src/components/layouts/LandingPage";
+import { NavigationContainer } from "@react-navigation/native";
+
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import ProfileSection from "./src/components/layouts/ProfileSection";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
-  );
+	return (
+		<NavigationContainer>
+			<Stack.Navigator>
+				<Stack.Screen
+					name="Home"
+					component={LandingPage}
+					// options={{ title: "Home" }}
+				/>
+				<Stack.Screen
+					name="Profile"
+					component={ProfileSection}
+					options={{ title: "Profile Section" }}
+				/>
+			</Stack.Navigator>
+		</NavigationContainer>
+	);
 }
