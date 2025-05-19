@@ -1,9 +1,10 @@
-import LandingPage from "./src/components/layouts/LandingPage";
 import { NavigationContainer } from "@react-navigation/native";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import ProfileSection from "./src/components/layouts/ProfileSection";
-import LoginPage from "./src/components/layouts/login";
+
+import LandingPage from "@/views/landing";
+import ProfileSection from "@/views/profile";
+import LoginPage from "@/views/login";
 
 const Stack = createNativeStackNavigator();
 

@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import PrimaryButton from "../ui/Buttons/Primary";
+import PrimaryButton from "@/components/ui/Buttons/Primary.jsx";
 
 export default function LandingPage({ navigation }) {
 	return (
