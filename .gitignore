@@ -36,3 +36,15 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# iOS
+ios
+ios/build/
+ios/Pods/
+
+# Android
+android
+android/.gradle/
+android/app/build/
+
+

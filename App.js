@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ProfileSection from "./src/components/layouts/ProfileSection";
+import LoginPage from "./src/components/layouts/login";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,11 @@ export default function App() {
 					name="Profile"
 					component={ProfileSection}
 					options={{ title: "Profile Section" }}
+				/>
+				<Stack.Screen
+					name="Login"
+					component={LoginPage}
+					options={{ title: "Login" }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>

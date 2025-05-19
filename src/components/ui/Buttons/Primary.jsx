@@ -1,33 +1,21 @@
-import { Button, SafeAreaView, StyleSheet } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
-export default function PrimaryButton({ title, onPress }) {
+import { GlobalStyles } from "../../../styles/global";
+
+export default function PrimaryButton({ title, onPress, buttonStyles }) {
 	return (
-		<SafeAreaView style={styles.container}>
-			<Button
-				color="white"
-				// backgroundColor="red"
-				style={styles.button}
-				title={title}
-				onPress={onPress}
-			/>
-		</SafeAreaView>
+		<TouchableOpacity
+			style={[GlobalStyles.primaryButton, buttonStyles]}
+			onPress={onPress}
+		>
+			<Text style={styles.buttonTitle}>{title}</Text>
+		</TouchableOpacity>
 	);
 }
 
 const styles = StyleSheet.create({
-	container: {
-		backgroundColor: "rgb(0,0,0)",
-		position: "absolute",
-		bottom: 0,
-		left: 0,
-		width: "100%",
-		borderWidth: 1,
-		borderColor: "red",
-	},
-	button: {
-		backgroundColor: "rgba(0,0,0,0.8)",
-		color: "#fff",
-		// padding: 20,
-		// height: 2000,
+	buttonTitle: {
+		color: "white",
+		fontSize: 20,
 	},
 });

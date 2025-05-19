@@ -7,6 +7,12 @@
       "ios",
       "android",
       "web"
-    ]
+    ],
+    "android": {
+      "package": "com.anonymous.financerapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.financerapp"
+    }
   }
 }
