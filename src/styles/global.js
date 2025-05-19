@@ -16,6 +16,28 @@ export const globals = {
 	radius: 10,
 };
 
+export const fontGlobalStyles = StyleSheet.create({
+	regular: {
+		fontWeight: 400,
+	},
+	medium: {
+		fontWeight: 500,
+	},
+	bold: {
+		fontWeight: 600,
+	},
+	headingSize: {
+		fontSize: 24,
+		fontWeight: 600,
+	},
+	subHeadingSize: {
+		fontsize: 20,
+	},
+	regularSize: {
+		fontSize: 16,
+	},
+});
+
 export const GlobalStyles = StyleSheet.create({
 	primaryButton: {
 		backgroundColor: colors.background,

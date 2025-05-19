@@ -1,11 +1,11 @@
 import { Text, View } from "react-native";
-import PrimaryButton from "@/components/ui/Buttons/Primary.jsx";
+import PrimaryButton from "@/components/ui/buttons/Primary.jsx";
 
 export default function LandingPage({ navigation }) {
 	return (
 		<View style={{ flex: 1 }}>
 			<View style={{ flex: 2, backgroundColor: "white" }}>
-				<Text>Landing Page</Text>
+				<Text>Landing Page here</Text>
 			</View>
 			<View style={{ flex: 3, gap: 20, padding: 20 }}>
 				<Text style={{ fontSize: 40, fontWeight: 600 }}>
