@@ -1,13 +1,34 @@
 import { Text, View } from "react-native";
+
 import PrimaryButton from "@/components/ui/buttons/Primary.jsx";
+
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function LandingPage({ navigation }) {
 	return (
-		<View style={{ flex: 1 }}>
-			<View style={{ flex: 2, backgroundColor: "white" }}>
+		<LinearGradient
+			// style={{
+			// 	flex: 1,
+			// 	backgroundColor: "#ABDBC3",
+			// }}
+			colors={["rgba(0, 0, 0, 1)", "rgba(171, 219, 195, 0.5)"]}
+			style={{
+				flex: 1,
+				height: "100vh",
+				display: "flex",
+				justifyContent: "flex-end",
+				alignItems: "flex-end",
+			}}
+		>
+			<View
+				style={{
+					flex: 2,
+					// backgroundColor: "#ABDBC3",
+				}}
+			>
 				<Text>Landing Page here</Text>
 			</View>
-			<View style={{ flex: 3, gap: 20, padding: 20 }}>
+			<View style={{ flex: 1, gap: 20, padding: 20, marginBottom: 50 }}>
 				<Text style={{ fontSize: 40, fontWeight: 600 }}>
 					Track Your Spendings Effortlessly{" "}
 				</Text>
@@ -30,6 +51,6 @@ export default function LandingPage({ navigation }) {
 					</Text>
 				</Text>
 			</View>
-		</View>
+		</LinearGradient>
 	);
 }

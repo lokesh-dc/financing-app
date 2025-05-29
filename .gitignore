@@ -48,3 +48,8 @@ android/.gradle/
 android/app/build/
 
 
+
+# Expo
+.expo
+dist/
+web-build/

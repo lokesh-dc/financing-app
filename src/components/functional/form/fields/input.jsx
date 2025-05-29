@@ -18,6 +18,6 @@ const styles = StyleSheet.create({
 		marginVertical: 10,
 		borderRadius: 10,
 		backgroundColor: "white",
-		borderColor: "rgba(0,0,0,0.6)",
+		borderColor: "rgba(0,0,0,0.1)",
 	},
 });
