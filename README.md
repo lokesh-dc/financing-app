@@ -1,43 +1,68 @@
-# My Universal React Project
+# Finance Tracker Mobile App (Prototype)
 
-<p>
-  <!-- iOS -->
-  <a href="https://itunes.apple.com/app/apple-store/id982107779">
-    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  </a>
-  <!-- Android -->
-  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
-    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  </a>
-  <!-- Web -->
-  <a href="https://docs.expo.dev/workflow/web/">
-    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-  </a>
-</p>
+A mobile-first personal finance app prototype built with React Native that allows users to log daily expenses, create monthly budgets, and visualize their spending habits. Designed to help users develop smarter money management habits through simple and intuitive interactions.
 
-## 🚀 How to use
+<img width="304" height="604" alt="Screenshot 2025-07-24 at 12 17 15 PM" src="https://github.com/user-attachments/assets/70650713-3b80-438d-ac3f-703cd73b226c" />
+<img width="304" height="604" alt="Screenshot 2025-07-24 at 4 49 36 PM" src="https://github.com/user-attachments/assets/f657d1d9-46c5-4521-91e3-dea1a9b434ed" />
 
-- Install packages with `yarn` or `npm install`.
-  - If you have native iOS code run `npx pod-install`
-- Run `yarn start` or `npm run start` to start the bundler.
-- Open the project in a React runtime to try it:
-  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
-  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
-  - Web: Any web browser
 
-## Running/Modifying Native Code
 
-You can generate native iOS and Android projects from your Expo config file (**app.json**/ **app.config.js**) by runnning `npx expo prebuild`. These native projects can then be compiled and run via XCode and Android Studio.
+## Features
 
-> 💡 Learn more about [native code in Expo](https://docs.expo.dev/workflow/customizing/)
+- Log daily expenses with customizable categories  
+- Set and track monthly budgets  
+- View spending summaries and trends over time  
+- Simple, clean, and mobile-optimized user interface  
+- Offline support using local storage (AsyncStorage)  
 
-## Publishing
+## Tech Stack
 
-- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
-- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
+- React Native  
+- TypeScript  
+- React Navigation for screen transitions  
+- AsyncStorage for local data persistence  
+- Chart libraries (e.g., Victory Native, Recharts) *(if used)*  
 
-## 📝 Notes
 
-- Learn more about [Universal React](https://docs.expo.dev/).
-- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
-- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/finance-tracker-app.git
+   cd finance-tracker-app
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+
+3. Run the app (using Expo CLI or React Native CLI):
+   
+   ```bash
+   npm start
+
+4. Use your preferred simulator/emulator or physical device to view the app.
+
+
+## Usage
+1. Navigate through the app to add daily expenses by category.
+
+2. Set monthly budget limits and monitor progress.
+
+3. Visualize spending trends with charts and summaries.
+
+## Status
+This project is currently a prototype and in active development. Some planned features include:
+
+- Budget limit alerts and notifications
+
+- Cloud sync and backup
+
+- Enhanced data visualizations
+
+- User authentication and profile management
+
+
+
+
